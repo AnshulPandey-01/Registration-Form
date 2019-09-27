@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head><meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="Rform_CSS.css">
+		<title>Form</title>
+	</head>
+	<body background="image4.JPG">
+		<button id="a">Fill Form</button>
+		<svg viewbox="0 0 200 100">
+		<polygon class="polymorph" points="0 0, 200 0, 200 100, 0 100" style="fill: #980054" />
+		</svg>
+		<div class="quote"><header><h2>KEEP MOVING FORWARD</h2></header>
+			<article>
+				If you can't <b>fly</b>,<br>
+				Then <b>run</b><br>
+				If you can't <b>run</b>,<br>
+				Then <b>walk</b><br>
+				If you can't <b>walk</b>,<br>
+				Then <b>crawl</b><br>
+				But whatever you do,<br>
+				You have to<br>
+				<b>KEEP MOVING FORWARD</b>
+			</article>
+		</div>
+		<div class="box">
+		<header><h1>Form</h1></header>
+		<form onsubmit="return func()" action="thank.html" method="post">
+			<table><tr>
+			<td>First Name:</td><td><input type="text" name="Fname" placeholder="First Name" required /></td>
+			</tr><tr>
+			<td>Last Name:</td><td><input type="text" name="Lname" placeholder="Last Name" required /></td>
+			</tr><tr>
+			<td>Email:</td><td><input type="email" name="email" placeholder="Enter Email" required /></td>
+			</tr><tr>
+			<td>Password:</td><td><input type="password" name="password" placeholder="Enter Password" value="" id="pass" required minlength="6"></td>
+			</tr><tr>
+			<td>Confirm Password:</td><td><input type="password" name="password" placeholder="Confirm Password" value="" id="Cpass" required></td>
+			</tr><tr><td></td><td><span id="messagep"></span></td>
+			</tr><tr>
+			<td>Mobile Number:</td><td><input type="tel" name="phone" placeholder="Enter Phone Number" maxlength="10" required /></td>
+			</tr><tr>
+			<td>Enter DOB:</td><td><input type="date" name="date" max="2001-12-31" required /></td>
+			</tr><tr>
+			<td>Select City:</td><td><select name="city" id="opt">
+			<option value="null">select</option>
+    		<option value="Bhopal">Bhopal</option>
+    		<option value="Gwalior">Gwalior</option>
+    		<option value="Indore">Indore</option>
+    		<option value="Jabalpur">Jabalpur</option>
+   			<option value="Ujjain">Ujjain</option>
+  			</select>
+			</td>
+			</tr><tr><td></td><td><span id="messagec"></span></td>
+			</tr><tr>
+			<td>Gender:</td><td>
+			<input type="radio" name="gender" value="Male" required /> Male
+			<input type="radio" name="gender" value="Female" /> Female
+			</td>
+			</tr><tr>
+			<td>Upload Photo:</td><td><input type="file" name="file"></td>
+			</tr><tr><td></td><td></td></tr><tr>
+			<td></td><td><input type="submit" name="submit" value="Submit" id="sub"></td>
+			</tr>
+			</table>
+		</form>
+	</div>
+	<script type="text/javascript" src="Rform_JS.js"></script>
+	<script type="text/javascript" src="anime.min.js"></script>
+	</body>
+</html>
